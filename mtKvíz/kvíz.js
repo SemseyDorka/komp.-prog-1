@@ -1,6 +1,6 @@
-// pos is position of where the user in the test or which question they're up to
+
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
-// this is a multidimensional array with 4 inner array elements with 5 elements inside them
+
 var questions = [
   {
       question: "Mikor született Mária Terézia?",
@@ -42,10 +42,9 @@ function renderQuestion(){
   if(pos >= questions.length){
     test.innerHTML = "<h2>"+correct+" jó válasz a  "+questions.length+"-ből</h2>";
     get("test_status").innerHTML = "Kvíz vége";
-    // resets the variable to allow users to restart the test
-    pos = 0;
+   
     correct = 0;
-    // stops rest of renderQuestion function running when test is completed
+    
     return false;
   }
 
