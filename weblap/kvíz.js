@@ -1,6 +1,4 @@
-
 var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
-
 var questions = [
   {
       question: "Mikor született Mária Terézia?",
@@ -42,9 +40,8 @@ function renderQuestion(){
   if(pos >= questions.length){
     test.innerHTML = "<h2>"+correct+" jó válasz a  "+questions.length+"-ből</h2>";
     get("test_status").innerHTML = "Kvíz vége";
-   
+    pos = 0;
     correct = 0;
-    
     return false;
   }
 
@@ -62,7 +59,7 @@ function renderQuestion(){
   test.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label><br>";
   test.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label><br>";
   test.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chC+"</label><br><br>";
-  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+  test.innerHTML += "<button onclick='checkAnswer()'>Válasz elküldése</button>";
 }
 
 function checkAnswer(){

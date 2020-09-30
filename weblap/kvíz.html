@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="kvíz.js"></script>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          position: relative;
+          overflow: hidden;
+          background-color: rgb(221, 206, 206);
+        }
+        
+        .topnav a {
+          float: left;
+          color:slategrey;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #b5a565;
+          color: white;
+        }
+        
+        .topnav-centered a {
+          float: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        
+        .topnav-right {
+          float: right;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .topnav a, .topnav-right {
+            float: none;
+            display: block;
+          }
+          
+          .topnav-centered a {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+          }
+        }
+        </style>
+    <title>Mária Terézia</title>
+</head>
+<body>
+    <nav>
+        <div class="topnav">
+
+            <!-- Centered link -->
+            <div class="topnav-centered">
+              <a href="index.html" >Főoldal</a>
+            </div>
+            
+            <!-- Left-aligned links (default) -->
+            <a href="kvíz.html" class="active">Kvíz</a>
+            <a href="csalad.html">Családja</a>
+            
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+              <a href="#re.html">Oktatással kapcsolatos intézkedései</a>
+              <a href="forras.html">Források</a>
+            </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Mária Terézia</h1>
+    </div>
+
+    <script src="kvíz.js"></script>
+
+<body>
+    <h2 id="test_status" style="text-align: center;"></h2>
+    <div id="test" style="text-align: center;"></div>
+</body>
+
+</html>
