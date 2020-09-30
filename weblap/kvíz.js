@@ -27,6 +27,20 @@ var questions = [
       b: "I.Ferenc",
       c: "VIII. Hemrik",
       answer: "B"
+    },
+    {
+      question: "Mikor fogadta el a magyar országgyűlés a Pragmatica Sanctio-t?",
+      a: "Az 1722/23-es országgyűlésen",
+      b:"Az 1711/12-es országgyűlésen",
+      c:"Nem fogadták el",
+      answer: "A"
+    },
+    {
+      question: "Mennyi katonával támogatta Magyarország Mária Teréziát az osztrák örökösödési háborúban?",
+      a: "15 ezer fővel",
+      b:"25 ezer fővel",
+      c: "35 ezer fővel",
+      answer: "C"
     }
   ];
 
