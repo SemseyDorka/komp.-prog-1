@@ -1,17 +1,20 @@
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d5d5d5;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .topnav {
     position: relative;
     overflow: hidden;
-    background-color: rgb(221, 206, 206);
+    background-color:#9099a2;
   }
   
   .topnav a {
     float: left;
-    color:slategrey;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -24,7 +27,7 @@ body {
   }
   
   .topnav a.active {
-    background-color: #b5a565;
+    background-color: #6d7993;
     color: white;
   }
   
@@ -65,4 +68,27 @@ body {
   p
   {
     text-align: justify;
+  }
+  #fej
+  {
+    font-size: 40px;
+    color: lightgray;
+    font
+  }
+  #fej2
+  {
+    background-color: #a4babd;
+  }
+  footer
+  {
+    color: lightgray;
+    background-color: #96858f;
+    text-align: center;
+  }
+  #portre
+  {
+    width: 30%;
+     height: 30%;
+     
+ 
   }

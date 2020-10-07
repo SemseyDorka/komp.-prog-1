@@ -54,6 +54,11 @@ function renderQuestion(){
   if(pos >= questions.length){
     test.innerHTML = "<h2>"+correct+" jó válasz a  "+questions.length+"-ből</h2>";
     get("test_status").innerHTML = "Kvíz vége";
+    var kep=document.getElementById("kep");
+    kep.setAttribute("src","swag.jpg")
+    kep.setAttribute("width","40%")
+    kep.setAttribute("height","30%")
+    document.body.appendChild(kep);
     pos = 0;
     correct = 0;
     return false;
