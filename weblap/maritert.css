@@ -72,23 +72,42 @@ body {
   #fej
   {
     font-size: 40px;
-    color: lightgray;
-    font
+    
   }
   #fej2
   {
-    background-color: #a4babd;
+    background-color: #d5d5d5;
+  
+
   }
   footer
   {
-    color: lightgray;
-    background-color: #96858f;
+    color: black;
+    background-color: #9099a2;
     text-align: center;
   }
   #portre
   {
     width: 30%;
      height: 30%;
-     
- 
+  }
+  hr  {
+    background-color: #6d7993;
+    color: #6d7993;
+    border: 2px solid;
+    border-color: #9099a2;
+  }
+  button
+  {
+    background-color: #9099a2;
+  border: none;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
   }
