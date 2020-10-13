@@ -54,12 +54,9 @@ function renderQuestion(){
   if(pos >= questions.length){
     test.innerHTML = "<h2>"+correct+" jó válasz a  "+questions.length+"-ből</h2>";
     get("test_status").innerHTML = "Kvíz vége";
-    var kep=document.getElementById("kep");
-    kep.setAttribute("src","swag.jpg")
-    kep.setAttribute("width","40%")
-    kep.setAttribute("height","30%")
-    document.body.appendChild(kep);
-    pos = 0;
+    test.innerHTML += "<button onclick='checkAnswer()'>Nyomja meg a gombot</button>";
+    kep=get("kep")
+    kep.innerHTML+="<img src='swag.jpg' id='swag'>";
     correct = 0;
     return false;
   }
@@ -75,9 +72,9 @@ function renderQuestion(){
   test.innerHTML = "<h3>"+question+"</h3>";
 
 
-  test.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chC+"</label><br><br>";
+  test.innerHTML += "<label> <input type='radio'  name='choices' value='A'> "+chA+"</label><br>";
+  test.innerHTML += "<label> <input type='radio'  name='choices' value='B'> "+chB+"</label><br>";
+  test.innerHTML += "<label> <input type='radio'  name='choices' value='C'> "+chC+"</label><br><br>";
   test.innerHTML += "<button onclick='checkAnswer()'>Válasz elküldése</button>";
 }
 

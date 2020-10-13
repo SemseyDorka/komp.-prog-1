@@ -1,9 +1,11 @@
 body {
+  position: relative;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
     background-color: #d5d5d5;
     margin-left: auto;
     margin-right: auto;
+
   }
   
   .topnav {
@@ -61,10 +63,12 @@ body {
     width: 30%;
     height: 30%;
     float: left;
-   
+    border: 3px solid;
+    border-color: #6d7993; 
     margin-right: 2%;
     margin-bottom: 2%;
   }
+
   p
   {
     text-align: justify;
@@ -72,11 +76,18 @@ body {
   #fej
   {
     font-size: 40px;
-    
-  }
+    text-align: center; 
+   
+    color:black;
+    border-top: #6d7993 2px solid;
+    border-bottom: #6d7993 2px solid;
+    margin-left: -6%;
+    margin-right: -6%;
+    }
   #fej2
   {
     background-color: #d5d5d5;
+    width: 100%;
   
 
   }
@@ -90,6 +101,8 @@ body {
   {
     width: 30%;
      height: 30%;
+     border: 3px solid;
+     border-color: #6d7993;
   }
   hr  {
     background-color: #6d7993;
@@ -110,4 +123,32 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  }
+  #fooldal
+  {
+    font-weight: bold;
+  }
+  #lap
+  {
+   
+   
+    border-color: #9099a2;
+    
+    background-color:rgba(
+      109, 121, 147, 0.4) ;
+    background-attachment: fixed;
+  }
+  #kep
+  {
+
+    text-align: center;
+  }
+  .responsive
+  {
+    width: 50%;
+    height: auto;
+  }
+  hr
+  {
+
   }
