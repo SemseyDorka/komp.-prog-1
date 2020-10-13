@@ -54,9 +54,8 @@ function renderQuestion(){
   if(pos >= questions.length){
     test.innerHTML = "<h2>"+correct+" jó válasz a  "+questions.length+"-ből</h2>";
     get("test_status").innerHTML = "Kvíz vége";
-    test.innerHTML += "<button onclick='checkAnswer()'>Nyomja meg a gombot</button>";
     kep=get("kep")
-    kep.innerHTML+="<img src='swag.jpg' id='swag'>";
+    kep.innerHTML+="<img src='swag.jpg'  class='img-circle' id='swag'>";
     correct = 0;
     return false;
   }
