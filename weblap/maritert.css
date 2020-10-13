@@ -5,6 +5,7 @@ body {
     background-color: #d5d5d5;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 60px;
 
   }
   
@@ -148,7 +149,7 @@ body {
     width: 50%;
     height: auto;
   }
-  hr
-  {
-
+  ul{
+    font-size:15px;
+    
   }
