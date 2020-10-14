@@ -136,7 +136,11 @@ body {
   }
   #lap
   {
-   
+   height: 50%;
+   width: 50%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
    
     border-color: #9099a2;
     
@@ -178,7 +182,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
-    
+    text-align: center;
 }
 
 .erd .card{
