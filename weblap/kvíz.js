@@ -8,7 +8,7 @@ var questions = [
       answer: "C"
     },
   {
-      question: "Hány évig uralkodott",
+      question: "Hány évig uralkodott?",
       a: "40",
       b: "49",
       c: "28",
@@ -41,7 +41,36 @@ var questions = [
       b:"25 ezer fővel",
       c: "35 ezer fővel",
       answer: "C"
+    },
+    {
+      question: "Hány gyermeke született házasságából?",
+      a: "3",
+      b: "11",
+      c: "16",
+      answer: "C"
+    },
+    {
+      question: "Melyik gyermeke lett később francia királyné?",
+      a: "Mária Antónia",
+      b: "Mária Erzsébet",
+      c: "Mária Amália",
+      answer:"A"
+    },
+    {
+      question:"Melyik évben adta ki Mária Terézia az első Ratio Educationis-t?",
+      a: "1789",
+      b:"1777",
+      c:"1806",
+      answer:"B"
+    },
+    {
+      question: "Milyen történelmi jelentősége volt ennek a rendeletnek?",
+      a:"Ekkor valósult meg először, hogy az állam szabályozta az oktatásügyet.",
+      b:"Ez volt Mária terézia első rendelete.",
+      c:"Ez a rendelet nagyobb mozgásteret biztosított az egyháznak.",
+      answer:"A"
     }
+
   ];
 
 function get(x){
@@ -60,7 +89,7 @@ function renderQuestion(){
     return false;
   }
 
-  get("test_status").innerHTML = "A(z) "+(pos+1)+". kérdés a "+questions.length+"-ből";
+  get("test_status").innerHTML = (pos+1)+". kérdés a "+questions.length+"-ből";
   
   question = questions[pos].question;
   chA = questions[pos].a;
