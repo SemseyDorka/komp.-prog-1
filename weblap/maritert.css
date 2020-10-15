@@ -246,4 +246,15 @@ body {
   border-color: #6d7993;
   float: right;
 }
+.craouseltext
+{
+  text-align: center;
+  background-color: #6d7993;
+}
+#kepek
+{
+  width: 40%;
+  height: 40%;
+}
+
 
